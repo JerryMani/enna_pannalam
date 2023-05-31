@@ -1,0 +1,159 @@
+/* footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    font-size: 14px;
+  } */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .foot {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+  
+  .foot h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .foot p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list-inline-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .list-inline-item:last-child {
+    margin-right: 0;
+  }
+  
+  .list-inline-item a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: #333;
+  }
+  
+  .list-inline-item a:hover {
+    background-color: #555;
+  }
+
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .rig {
+    text-align: center;
+  }
+  
+  @media (max-width: 991px) {
+    .foot {
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .foot {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .list-inline {
+      margin-bottom: 20px;
+    }
+  
+    .left,
+    .rig {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .foot {
+      margin-bottom: 40px;
+    }
+  
+    .foot h3 {
+      font-size: 18px;
+    }
+  
+    .foot p {
+      font-size: 12px;
+    }
+  
+    .list-inline-item a {
+      font-size: 12px;
+    }
+  
+    .left,
+    .rig {
+      display: block;
+      text-align: center;
+    }
+  
+    .left p,
+    .rig p {
+      font-size: 12px;
+    }
+  }
+
+
+  /* Footer styling */
+footer {
+    background-color: black;
+    border-top: 1px solid #de3131;
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;  
+    color: #e42d2d;
+  }
+  
+  /* Footer links */
+  footer a {
+    color: #e13838;
+    text-decoration: none;
+    height: auto;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  @media (min-width: 768px){
+
+.rig .col-md-8 {
+    flex: 0 0 auto;
+    width: 32%;
+}
+  }
+  

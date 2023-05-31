@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: black;
+  height: 100%;
+  width: 100%; */
+/* background-image: url(../src/Components/images/car1\ \(2\).jpg); */
+/* 
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+ 
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);  */
+  }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

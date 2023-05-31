@@ -1,0 +1,260 @@
+/* .header-nav-links-item {
+  text-decoration:none ;
+}
+.header-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    box-shadow: -1px 1px 40px -18px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.header-left-cont {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-logo {
+    width: 250px;
+}
+
+.header-nav-links-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: dotted;
+    list-style-type: none;
+}
+
+.header-nav-links-item {
+    margin-top: 1rem;
+    
+}
+
+.sub-menu {
+    width: 8rem;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    z-index: 100;
+    top: 3rem;
+    box-shadow: 0px 5px 40px -18px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1rem 0 1rem 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+.header-nav-link {
+    color: #000;
+    font-weight: 350;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.header-profile-cont {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav-links-list {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      text-decoration: dotted;
+      list-style-type: none;
+    }
+  
+    .header-nav-links-item {
+      margin-top: 0; 
+    }
+  
+    .header-nav-links-item:hover .sub-menu {
+      display: block;
+    }
+  }
+  
+  Header profile styles
+  .header-profile-cont {
+    display: none; 
+  }
+  
+  @media screen and (min-width: 768px) {
+    .header-profile-cont {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+
+
+
+   */
+
+   .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 3rem;
+    box-shadow: -1px 1px 40px -18px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 250px;
+    height: 65px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 2.5rem;
+  }
+  
+  .btn-icons {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:rgb(227, 92, 115);
+  }
+  
+  .nav-links {
+    margin: 20px 0px 0px 0px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.05rem;
+  }
+  
+  .course-nav-links {
+    text-decoration: none;
+    margin: 20px 0px 0px 0px;
+  }
+  
+  .nav-links:hover {
+    color: #e22b63;
+    border-bottom: 3px solid #e22b63;
+  }
+  
+  .course-nav {
+    background-color: #e22b63;
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    font-size: 1.05rem;
+  }
+  
+  .course-nav:hover {
+    background-color: #fff;
+    color: #e22b63;
+    border-bottom: none;
+  }
+  
+  .mobile {
+    display: none;
+  }
+
+  .header-profile-cont {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+  
+  @media screen and (max-width: 1030px) {
+    .logo-img {
+      width: 150px;
+    }
+    .mobile {
+      display: block;
+    }
+    .nav {
+      z-index: 99;
+      position: relative;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      opacity: 0;
+      align-items: stretch;
+      border-radius: 13px;
+      background-color: white;
+      padding: 100px 0 30px 0px;
+      margin: 0;
+      transition: 0.3s ease-in-out;
+      border-bottom: 3px solid #e22b63;
+      box-shadow: -1px 1px 62px -18px #e22b63;
+    }
+    .navbar.nav-active {
+      left: 0;
+      opacity: 1;
+      z-index: -1;
+    }
+    .nav-links {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      font-size: 1.2rem;
+      padding: 0.7rem 0;;
+      color:  rgb(227, 54, 83);
+      font-weight: bold;
+    }
+    .nav-links:hover {
+      background-color: #e22b63;
+      color: #fff;
+      border: none;
+    }
+    .course-nav {
+      display: inline;
+      align-self: center;
+      font-size: 1.2rem;
+    }
+    .header-profile-cont {
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+
+
+

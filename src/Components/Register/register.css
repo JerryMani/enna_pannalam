@@ -1,0 +1,145 @@
+.reg-cont {
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.parag {
+  font-size: 14px;
+  color: hsl(0, 92%, 90%)aea;
+  margin: 10px;
+  margin-left: 700px;
+
+}
+.reg-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7rem;
+}
+
+.logo-link-img {
+  width: 300px;
+}
+
+.reg-log-cont {
+  display: flex;
+  align-items: center;
+}
+
+.reg-body-cont {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.reg-form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+  background-color: #000;
+  border: 3px solid rgb(227, 92, 115);
+}
+
+.reg-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  /* width: 50%;
+  background-color: #000;
+  border: 3px solid rgb(227, 92, 115);
+  padding: 5rem; */
+}
+
+.form-controls {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  outline: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+.reg-body-form-img-cont {
+  height: 600px;
+  width: 540px;
+ 
+}
+
+.reg-body-form-img {
+  width: 100%;
+  height: 100%;
+}
+
+.reg-content1-body {
+    position: relative;
+}
+
+.reg-body-img {
+    width: 100%;
+    height: 500px;
+}
+
+.reg-content1 {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0%,-50%);
+    color: #fff;
+    width:300px;
+    height: 300px;
+}
+@media screen and (max-width: 768px) {
+ 
+  .reg-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .parag {
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .reg-body-cont {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .reg-form-cont {
+    width: 100%;
+
+  }
+  .reg-form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-controls {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .reg-body-form-img-cont {
+    display: none;
+  }
+  .reg-body-img{
+    height: 250px;
+  }
+}
+
+

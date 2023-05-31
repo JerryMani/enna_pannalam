@@ -1,0 +1,79 @@
+
+.otp-form-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-image: url(../../images/good.jpg);
+    }
+  
+  .otp-form-container {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-in-out forwards;
+    transform: translateX(-100%);
+  }
+  
+  /* .ball{
+    background-image: url(../../images/otp1.jpg);
+background-repeat: no-repeat;
+
+  } */
+ 
+  .otp-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .otp-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .otp-input-container input {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: none;
+    transition: all 8ms ease-in-out;
+  }
+  
+  .otp-input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .otp-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 8.3s ease-in-out;
+  }
+  
+  .otp-btn:hover {
+    background-color: #0069d9;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,21 @@
+.back
+{
+    background-color: #eee;
+}
+.img-fluid{
+    width: 150px;
+    border: 250px;
+}
+hr:not([size]) {
+    height: 1px;
+}
+hr{
+    height: 100%;
+    width: 600px;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+}
+.bt{
+    text-align: center;
+    color: blue;
+}
