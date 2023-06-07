@@ -1,239 +1,60 @@
+.back{
 
-.form-container {
-	width: 100vw;
-	height: 100vh;
-	background-color: rgb(227, 92, 115);
-	display: flex;
-   	justify-content: center;
-	align-items: center;
+	background-color: #e05151;
+	overflow: hidden;
 }
-.upload-files-container {
-	background-color: #f7fff7;
-	width: 95%;
-	max-width: 450px;
-	margin: auto;
-	padding: 30px 60px;
-	border-radius: 40px;
-	display: flex;
-   	align-items: center;
-   	justify-content: center;
-	flex-direction: column;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
-}
-.drag-file-area {
-	border: 2px dashed rgb(227, 92, 115);
-	border-radius: 40px;
-	margin: 10px 0 15px;
-	padding: 30px 50px;
-	max-width: 400px;
-	margin: auto 0;
+.image-upload-form {
+	max-width: 500px;
+	max-height: 100vh;
+	margin: 10% 30%;
+	padding: 70px;
 	text-align: center;
-}
-.drag-file-area .upload-icon {
-	font-size: 50px;
-}
-.drag-file-area h3 {
-	font-size: 26px;
-	margin: 15px 0;
-}
-.drag-file-area label {
-	font-size: 19px;
-margin-left: -30px;
-}
-.drag-file-area label .browse-files-text {
-	color: #7b2cbf;
-	font-weight: bolder;
-	cursor: pointer;
-}
-.browse-files span {
-	position: relative;
-	top: -25px;
-}
-.default-file-input {
-	opacity: 0;
-}
-.cannot-upload-message {
-	background-color: #ffc6c4;
-	font-size: 17px;
-	display: flex;
-	align-items: center;
-	margin: 5px 0;
-	padding: 5px 10px 5px 30px;
+	border: 2px dashed #000000;
 	border-radius: 5px;
-	color: #BB0000;
-	display: none;
-}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-.cannot-upload-message span, .upload-button-icon {
-	padding-right: 10px;
-}
-.cannot-upload-message span:last-child {
-	padding-left: 20px;
-	cursor: pointer;
-}
-.file-block {
-	color: #f7fff7;
-	background-color: #7b2cbf;
-  	transition: all 1s;
-	width: 390px;
-	position: relative;
-	display: none;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin: 10px 0 15px;
-	padding: 10px 20px;
-	border-radius: 25px;
-	cursor: pointer;
-}
-.file-info {
-	display: flex;
-	align-items: center;
-	font-size: 15px;
-}
-.file-icon {
-	margin-right: 10px;
-}
-.file-name, .file-size {
-	padding: 0 3px;
-}
-.remove-file-icon {
-	cursor: pointer;
-}
-.progress-bar {
-	display: flex;
-	position: absolute;
-	bottom: 0;
-	left: 4.5%;
-	width: 0;
-	height: 5px;
-	border-radius: 25px;
-	background-color: #4BB543;
-}
-.upload-button {
-	font-family: 'Montserrat';
-	background-color:    rgb(227, 92, 115)
-    ;
-	color: #f7fff7;
-	display: flex;
-	align-items: center;
-	font-size: 18px;
-	border: none;
-	border-radius: 20px;
-	margin: 10px;
-	padding: 7.5px 50px;
-	cursor: pointer;
-}
+	 
+  }
+  .image-upload-form h2{
+	color:#000000
 
-@media screen and (max-width: 766px) {
-	.drag-file-area {
-		border: none;
-	}
-}
-
-.form-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 20px;
   }
   
-  .upload-files-container {
-	text-align: center;
+  .form-group {
+	margin-bottom: 40px;
+	text-align: left;
   }
   
-  .drag-file-area {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 20px;
+  label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
   }
   
-  .upload-icon {
-	font-size: 48px;
-	margin-bottom: 10px;
+  input[type="file"] {
+	display: block;
   }
   
-  .dynamic-message {
-	font-size: 16px;
-  }
-  
-  .label {
-	display: inline-block;
-	margin-top: 10px;
-  }
-  
-  .default-file-input {
-	display: none;
-  }
-  
-  .browse-files-text {
-	color: blue;
-	cursor: pointer;
-  }
-  
-  .cannot-upload-message {
-	display: none;
-	color: red;
-	margin-top: 10px;
-  }
-  
-  .cannot-upload-message .cancel-alert-button {
-	cursor: pointer;
-  }
-  
-  .file-block {
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
-  }
-  
-  .file-info {
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
-  }
-  
-  .file-icon {
-	margin-right: 5px;
-  }
-  
-  .remove-file-icon {
-	color: red;
-	font-size: 20px;
-	cursor: pointer;
-	margin-left: 10px;
-  }
-  
-  .progress-bar {
+  .submit-button {
+	display: block;
 	width: 100%;
-	height: 5px;
-	background-color: #ccc;
-	margin-bottom: 10px;
-  }
-  
-  .upload-button {
+	margin-top: 20px;
+	padding: 10px;
 	background-color: #4caf50;
-	color: white;
+	color: #fff;
 	border: none;
-	padding: 10px 20px;
+	border-radius: 4px;
 	cursor: pointer;
-	transition: background-color 0.3s;
   }
   
-  .upload-button:hover {
+  .submit-button:hover {
 	background-color: #45a049;
   }
   
-  .upload-status {
-	margin-top: 20px;
-	text-align: center;
-	font-weight: bold;
-	color: green;
+  .submit-button:focus {
+	outline: none;
   }
   
-
-
+  .errorMessage {
+	color: red;
+	margin-top: 10px;
+  }
+  

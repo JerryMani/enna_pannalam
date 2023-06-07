@@ -8,11 +8,11 @@ const bodyParser = require("body-parser");
 const apiBaseUrl = "http://localhost:3000";
 
 const app = express();
+app.use(express.json());
+const upload = multer({ dest: 'uploads/' });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({ origin: apiBaseUrl, credentials: true }));
-
-const upload = multer({ dest: 'uploads/' });
 
 
 const db = mysql.createConnection({
@@ -315,7 +315,8 @@ app.post("/api/PersonalDetails", (req, res) => {
     physical,
   } = req.body;
   const sql =
-    "INSERT INTO personal_details (`user_id`,`education`,`employment_type`,	`occupation`,	`income`,	`height`,`weight`,`body_type`,	`complexion`,`physical`) VALUES (?,?, ?, ?, ?,?,?,?,?,?)";
+  "INSERT INTO personal_details (`user_id`,`education`,`employment_type`,`occupation`,`income`,`height`,`weight`,`body_type`,`complexion`,`physical`) VALUES (?,?,?,?,?,?,?,?,?,?)";
+
   db.query(
     sql,
     [
@@ -414,25 +415,28 @@ app.post("/api/PartnerPreferenceDetails", (req, res) => {
   );
 });
 
-app.post('/upload', upload.single('image'), (req, res) => {
+app.post('/api/upload', upload.single('image'), (req, res) => {
   if (!req.file) {
-    return res.status(400).json({ message: 'No file received' });
+    return res.status(400).json({ message: 'No file uploaded' });
   }
 
-  const { filename, path: filePath } = req.file;
+  // Store the image filename in the database
+  const { originalname, filename } = req.file;
+  const imageUrl = `uploads/${filename}`;
 
-  // Insert the file details into the database
-  const query = 'INSERT INTO files (filename, filepath) VALUES (?, ?)';
-   db.query(query, [filename, filePath], (err, result) => {
-    if (err) {
-      console.error('Error inserting file into the database:', err);
-      return res.status(500).json({ message: 'Failed to upload file' });
+  db.query(
+    'INSERT INTO images (originalname, filename, imageUrl) VALUES (?, ?, ?)',
+    [originalname, filename, imageUrl],
+    (error, results) => {
+      if (error) {
+        console.error(error);
+        return res.status(500).json({ message: 'Failed to upload image' });
+      }
+
+      return res.json({ message: 'Image uploaded successfully' });
     }
-
-    return res.status(200).json({ message: 'File uploaded successfully' });
-  });
+  );
 });
-
 
 
 // Start the server
